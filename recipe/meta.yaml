@@ -11,46 +11,31 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - absl-py
-    - autograd
-    - autograd-gamma
-    - cycler
-    - fastcache
-    - future
-    - joblib
-    - kiwisolver
-    - lifelines
-    - matplotlib-base
-    - numpy
-    - opt-einsum
-    - pandas
-    - protobuf
-    - pyparsing
-    - python-dateutil
-    - pytz
-    - scikit-learn
-    - scipy
-    - six
-    - tqdm
-
+    - python >=3.6
+    - numpy >=1.17.2
+    - scipy >=1.3.1
+    - scikit-learn >=0.21.3
+    - tqdm>=4.36.1
+    - lifelines>=0.22.8
 
 test:
   imports:
     - ngboost
+    - ngboost.distns
 
 about:
   home: https://github.com/stanfordmlgroup/ngboost
   license: Apache-2.0
   license_family: Apache
+  # license file manually packaged. See tracking PR: https://github.com/stanfordmlgroup/ngboost/pull/178
   license_file: LICENSE
   summary: Natural Gradient Boosting for Probabilistic Prediction
 
@@ -71,3 +56,4 @@ extra:
   recipe-maintainers:
     - ericmjl
     - avati
+    - synapticarbors
