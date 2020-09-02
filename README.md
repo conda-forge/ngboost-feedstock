@@ -125,4 +125,5 @@ Feedstock Maintainers
 
 * [@avati](https://github.com/avati/)
 * [@ericmjl](https://github.com/ericmjl/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
