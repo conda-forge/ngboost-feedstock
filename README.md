@@ -5,9 +5,13 @@ Home: https://github.com/stanfordmlgroup/ngboost
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ngboost-feedstock/blob/master/LICENSE.txt)
 
 Summary: Natural Gradient Boosting for Probabilistic Prediction
+
+Development: https://github.com/stanfordmlgroup/ngboost
+
+Documentation: https://github.com/stanfordmlgroup/ngboost
 
 'ngboost is a Python library that implements Natural Gradient Boosting,
 as described in "NGBoost:

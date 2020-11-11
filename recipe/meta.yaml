@@ -1,5 +1,5 @@
 {% set name = "ngboost" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4bea289324c29b71aafe460e811cd4761bef698fa578b31a340a91e34cdc0350
+  sha256: 5c4994b73ee2ee7b0e38e4992dca422bdf57f06c85109403f7ff09341e99c454
 
 build:
   noarch: python
@@ -18,13 +18,14 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - poetry
   run:
     - python >=3.6
-    - numpy >=1.17.2
-    - scipy >=1.3.1
-    - scikit-learn >=0.21.3
-    - tqdm >=4.36.1
-    - lifelines >=0.22.8
+    - numpy >=1.17,<2.0
+    - scipy >=1.3,<2.0
+    - scikit-learn >=0.21,<0.24
+    - tqdm >=4.36,<5.0
+    - lifelines >=0.25,<0.29
 
 test:
   imports:
@@ -35,7 +36,6 @@ about:
   home: https://github.com/stanfordmlgroup/ngboost
   license: Apache-2.0
   license_family: Apache
-  # license file manually packaged. See tracking PR: https://github.com/stanfordmlgroup/ngboost/pull/178
   license_file: LICENSE
   summary: Natural Gradient Boosting for Probabilistic Prediction
 
