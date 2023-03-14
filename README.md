@@ -1,11 +1,11 @@
-About ngboost
-=============
+About ngboost-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ngboost-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/stanfordmlgroup/ngboost
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ngboost-feedstock/blob/main/LICENSE.txt)
 
 Summary: Natural Gradient Boosting for Probabilistic Prediction
 
