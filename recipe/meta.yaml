@@ -1,5 +1,5 @@
 {% set name = "ngboost" %}
-{% set version = "0.3.13" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0d074c4249afdd51236b0c8203f1490baea68fd7237949618bcc7f6230f05adf
+  sha256: eec69024098c3d22740e624042c2a030c97ba3f371368f3cef597502c0b85b7e
 
 build:
   noarch: python
@@ -16,21 +16,27 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7.1,<3.11
     - pip
-    - poetry
+    - poetry-core >=1.0.0
   run:
-    - python >=3.6
-    - numpy >=1.17,<2.0
-    - scipy >=1.3,<2.0
-    - scikit-learn >=0.21,<0.24
-    - tqdm >=4.36,<5.0
-    - lifelines >=0.25,<0.29
+    - python >=3.7.1,<3.11
+    - numpy >=1.21.2
+    - scipy >=1.7.2
+    - scikit-learn >=1.0.2
+    - tqdm >=4.3
+    - lifelines >=0.25
+    - pandas >=1.3.5
+    - flake8 >=5.0.4,<5.1.0
 
 test:
   imports:
     - ngboost
     - ngboost.distns
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/stanfordmlgroup/ngboost
