@@ -1,5 +1,5 @@
 {% set name = "ngboost" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 42207c18fcb7b22ad9d179a6ae3587f4b5b1eb9e3d03a42b7869473d23bece20
+  sha256: cc70a28fa2d187e10bab3431099be3984a2da8104882442781968d75d242a80c
 
 build:
   noarch: python
