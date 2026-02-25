@@ -21,7 +21,6 @@ and is designed to be scalable and modular
 with respect to choice of
 proper scoring rule, distribution, and base learners.'
 
-
 Current build status
 ====================
 
