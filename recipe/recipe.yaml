@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ngboost
-  version: "0.5.11"
+  version: "0.6.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 873326442f00632829a521209b1030e150e0ef0a9de09952e044f8f3b8839940
+  sha256: 3f90825657dc49dbd88fea5ffa5ef6109686d5fa48360144546c1e5926ade12e
 
 build:
   number: 0
